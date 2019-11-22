@@ -1,111 +1,178 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt.br">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Blog SportDay">
+    <meta name="description" content="Blog FutFake">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="João Vitor">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sport Day</title>
-    <style>
-        ul
-        {
-            display: none;
-            display: flex;
-            justify-content: center;
-        
-        }
-        
-        li
-        {
-            display: inline;/*tornar minha lista horizontal*/    
-        }
-        a
-        {
-            color: black;
-            text-decoration: none;
-        }
-        .center
-        {
-            display: flex;
-            justify-content: center;
-        }
-        .conteudo
-        {
-            display: flex;
-            justify-content: center;
-        }
-        .linkTwo
-        {
-            display: block;
-            text-decoration: none;
-        }
-        .titulo
-        {
-            display: flex;
-            justify-content: center;
-        }
-        .taison
-        {
-        float:left;
-        max-width:500px;
-        margin-left:10px;
-        margin-bottom:50px ;
-        }
-        .mourinho
-        {
-        float:left;
-        max-width:500px;
-        margin-left:10px;
-        }
-        .areaImagem img
-        {
-        width:400px;
-        }
-        body{
-        width:1024px;
-         }
-        .areaImagem
-        {
-        float:left;
-        margin-top:10px;
-        }
-        .areaImagemTwo
-        {
-        float:left;
-        margin-top:10px;
-        }
-        .areaImagemTwo img
-        {
-        width:400px;
-        }
-       
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assents/css/style.css">
+    <title>Futebol verdadeiro</title>
 </head>
 <body>
-    <h1 class= "titulo"><em>Sport Day</em></h1>
-    <ul class="lista">
-        <li><a href="index.html" target="_blank" >Home</a></li>
-        <li><a href="cadastro.html" target="_blank">Cadastre-se</a></li>
-    </ul>
-    <h2 class = "conteudo"><em>Vida fácil? Tabela na reta final pode ajudar o Corinthians na luta por vaga na Libertadores</em></h2>
-    <figure class="center">
-        <img src="liberta.png" alt="Treinador Coelho passando puxando uma mala" title="Treinador Coelho">
-    </figure>
-    
-    <figure class="areaImagemTwo">
-        <img  src="mourinho.jpg" alt = "Treinador Mourinho é apresentado ao Tottenham"
-        title = "Treinado Mourinho">
-    </figure>
-    <h3 class = "mourinho"><em>José Mourinho chega ao Tottenham para substituir Pochettino</em></h3>
 
-    <figure class="areaImagem">
-        <img src="taison.jpg" alt = "Taison faz gesto obseno para torcida após ser vitima de racismo" title = "Taison faz gesto obseno para torcida após ser vitima de racismo">
-        
-    </figure>
-    <h4 class ="taison"><em>Taison é punido com um jogo de suspensão por reagir a caso de racismo na Ucrânia</em></h4>
-
+    <!--MENU-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light navnav">
+    <a class="navbar-brand" href="#">FutFake.com</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Quem somos</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Campeonatos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Brasileirão</a>
+            <a class="dropdown-item" href="#">Premier League</a>
+            <a class="dropdown-item" href="#">La Liga</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Cadastre-se</a>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+    </div>
+    </nav>
+<!--CARROUSEL-->
+
+<div class="row">
+        <div class="col"></div>
+           <div class="col-10">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    
+    <div class="carousel-inner">
+        <div class="carousel-item active .carousel-caption">
+        <img class="d-block w-100" src="assents/imagem/briga.jpg" alt="Primeiro Slide">
+             <div class="carousel-caption d-none d-md-block">
+                <h5><strong><em>briga com Bruno Henrique e final é cancelada</em></strong></h5>
+                <p>briga com Bruno Henrique e final é cancelada</p>
+              </div>
+        </div>
+        <div class="carousel-item .carousel-caption">
+        <img class="d-block w-100" src="assents/imagem/cr7.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><strong><em>Cristiano Ronaldo diz que senha em ser treinado por Carrile</em></strong></h5>
+                    <p>Cristiano Ronaldo diz em entrevista a band que sonha em ser treinado pelo ex-tecnico do Corinthians Carrile</p>
+                 </div>
+        </div>
+        <div class="carousel-item .carousel-caption">
+        <img class="d-block w-100" src="assents/imagem/onibos.jpeg" alt="Terceiro Slide">
+                 <div class="carousel-caption d-none d-md-block">
+                    <h5><strong><em>Onibos do Flamengo acaba a gasolina no caminho para o palco da final da Libertadores</em></strong></h5>
+                    <p>O onibos do flamengo estava a caminho do estadio Monumental em Peru, quando foi surpreendido pelo aviso que o teria acabado a gasolina do onibos, os torcedores começaram a empurrar o onibos até o estadio</p>
+                </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+</div>
+</div>
+
+</div>
+</div>
+
+<!--CARDS-->
+<div class="card-columns mt-4">
+        <div class="card">
+          <img class="card-img-top" src="assents/imagem/corinthians.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Vagner Love e Gabriel se impressionam com a habilidade de João jovem de 19 anos</h5>
+            <p class="card-text">João Vitor, 19 anos, 1,82 de altura é a nova contratação do Timão, jovem logo em seu primeiro treino, mostrou seu repertorio de dribles, distribuindo chapeus e canetas e logo em seguida fazendo um gol de bicicleta.</p>
+          </div>
+        </div>
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p>O River Plate jogou demais, lembrei a Alemanha contra o Brasil em 2014 .</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Jorge Jesua após a derrota de  <cite title="Título da fonte">5 x 0</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="assents/imagem/renato.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Renato Gaucho mostra o extrato do salario de sua aposentadoria</h5>
+            <p class="card-text">Renato Gaucho chora e mostra em sua entrevista o seu miseravel salario após se aposentar como jogador de futebol, o mesmo alega que é impossivel viver com <strong>apenas</strong> 568 salarios minimos.</p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+            <footer class="blockquote-footer">
+              <small>
+                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="assents/imagem/galvao.jpg" alt="Imagem do card">
+        </div>
+        <div class="card p-0 text-right">
+          <blockquote class="blockquote mb-0">
+            <p>Galvão Bueno não ira narrar o jogo entre Fla x Rives, após jantar em restaurante e comer o famoso X-RATÃO em Peru, o mesmo alega estar com desinteria, e está mijando pela bunda</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                disse Galvão Bueno a <cite title="Título da fonte">Globo</cite>
+              </small>
+            </footer>
+          </blockquote>
+         </div>
+        </div>
+      </div>
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+    <!--BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
