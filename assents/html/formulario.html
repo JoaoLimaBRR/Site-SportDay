@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cadastro FutFake">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="João Vitor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+   
+    <title>Futebol verdadeiro</title>
+    
+</head>
+
+<body id = "form">
+<!--------------------------------------------------------MODAL-------------------------------------------->
+  <div id="modal" class="modal fade" tabindex="-1" role="dialog"><!-- Início do código da janela modal -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><!-- Header do modal -->
+                <h4 class="modal-title">Login</h4><!-- Título -->
+            </div>
+            <div class="modal-body"><!-- Corpo do modal -->
+                <form action=""><!-- Início do Formulário -->
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Digite sua senha">
+                    </div>
+                    <button class="btn btn-block btn-info">Enviar</button>
+                </form>
+            </div>
+            <div class="modal-footer"><!-- Footer do Modal -->
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Fechar <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>    
+                <a href="formulario.html">
+                <button type="button" class="btn btn-default"x>
+                    Cadastre-se 
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+              </a>   
+              </a>            
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------FIM DO MODAL---------------------------------------------> <!------------------------------------------MENU------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navnav">
+        <a class="navbar-brand" href="#">FutFake.com</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+                
+             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../index.html">Home <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem somos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Campeonatos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Brasileirão</a>
+                        <a class="dropdown-item" href="#">Premier League</a>
+                        <a class="dropdown-item" href="#">La Liga</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html"  data-toggle="modal" data-target="#modal">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </div>
+    </nav>
+<!--------------------------------------MENU-------------------------------------------------->
+        
+<!-------------------------------------INICIO DO FORMULARIO--------------------------------------------->
+<form id="form2">
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3 col-sm-5">
+            <label for="validationDefault01">Primeiro nome</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" value="" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Sobrenome</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome" value="" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefaultUsername">Usuário</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              </div>
+              <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Cidade</label>
+            <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">Estado</label>
+            <select class="form-control" aria-placeholder="Escolha">
+                    <option>Selecione</option>
+                    <option>São Paulo</option>
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapa</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceara</option>
+                    <option>Distrito Federal</option>
+                    <option>Esperito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí </option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Rio Grande do Sul </option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina </option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                  </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">CEP</label>
+            <input type="text" class="form-control" id="validationDefault05" placeholder="00000-000" maxlength="9" required>
+          </div>
+        </div>
+         <!--RADIO SEXO-->
+         <div class="form-row ">
+      <fieldset class="form-group">
+            <div class="row col-md-6 pt-6 ">
+              <legend id="sexo" class="col-form-label mb-0 md-6 mt-0 ">SEXO</legend>
+              <div class="col-md-0 mb-0 mb-1">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="masc" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    MASCULINO
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="fem">
+                  <label class="form-check-label" for="gridRadios2">
+                    FEMININO
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <!--ESTADO CIVIL-->
+      <div class="form-group col-sm-5 pt-10 ">
+            <label for="inputEstado">Estado Civil</label>
+            <select id="inputEstado" class="form-control">
+              <option selected>Escolher...</option>
+              <option>CASADO</option>
+              <option>SOLTEIRO</option>
+              <option>VIUVO</option>
+              <option>DIVORCIADO</option>
+            </select>
+          </div>
+          <div class="form-group ">
+                <label for="example-tel-input" class="col-10">Telefone</label>
+                <div class="col-10 md-12">
+                  <input class="form-control" type="tel" placeholder="(11) 99999-9999" id="example-tel-input" maxlength="11">
+                </div>
+              </div>
+              <div class="form-group ">
+              <label class="col-12" for="Nome">Nascimento<h11>*</h11></label>
+              <div class="col-md-12">
+                    <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" onkeypress="formatar('##/##/####', this)" onblur="showhide()">
+                  </div>
+         </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Concordo com os termos e condições
+            </label>
+          </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+
+      
+      <div id = "footerSegundario" class="card text-center" >
+            <div class="card-header">
+              Destaque
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>FutFake.com</strong></h5>
+              <p class="card-text"><em>Site criado para estudo, feito apenas com HTML, CSS, BootStrap.</em></p>
+              <a href="https://github.com/JoaoLimaBRR" target="_blank" class="btn btn-primary">Visite meu GitHub </a>
+              <img src="../imagem/github.png" alt="">
+              
+            </div>
+            <div id = "nomeOriginal" class="card-footer text-muted">
+                    <strong>®JoãoVitor®</strong>
+            </div>
+          </div>
+
+      
+     
+<!-------------------------------------FIM DO FORMULARIO--------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--BOOTSTRAP-->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

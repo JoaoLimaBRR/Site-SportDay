@@ -12,9 +12,46 @@
     <title>Futebol verdadeiro</title>
 </head>
 <body>
+  <!--------------------------------------------------------MODAL-------------------------------------------->
+ 
 
-    <!--MENU-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light navnav">
+  
+  <!-- Modal -->
+  <div id="modal" class="modal fade" tabindex="-1" role="dialog"><!-- Início do código da janela modal -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><!-- Header do modal -->
+                <h4 class="modal-title">Login</h4><!-- Título -->
+            </div>
+            <div class="modal-body"><!-- Corpo do modal -->
+                <form action=""><!-- Início do Formulário -->
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Digite seu email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Digite sua senha">
+                    </div>
+                    <button class="btn btn-block btn-info">Enviar</button>
+                </form>
+            </div>
+            <div class="modal-footer"> <!-- Footer do Modal -->
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Fechar <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>    
+           <a href="assents/html/formulario.html">
+                <button type="button" class="btn btn-default"x>
+                    Cadastre-se 
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+              </a>   
+              </a>            
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------FIM DO MODAL--------------------------------------------->
+    <!------------------------------------------MENU------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navnav">
     <a class="navbar-brand" href="#">FutFake.com</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -39,7 +76,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Cadastre-se</a>
+            <a class="nav-link" href="#" href="#" data-toggle="modal" data-target="#modal">Login</a>
         </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -48,7 +85,8 @@
         </form>
     </div>
     </nav>
-<!--CARROUSEL-->
+    <!--------------------------------------MENU-------------------------------------------------->
+<!-----------------------------------------CARROUSEL---------------------------------------------->
 
 <div class="row">
         <div class="col"></div>
@@ -124,20 +162,20 @@
             <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
           </div>
         </div>
-        <div class="card bg-primary text-white text-center p-3">
+        <div class="card   text-center p-0">
           <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+            <p>Grêmio vence, garante vaga na Libertadores e tira chance de título do Palmeiras e Renato Gaucho pede "Bicho" por ajuda ao Flamengo</p>
             <footer class="blockquote-footer">
               <small>
-                Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+               <strong>Renato Gaucho <cite title="aria-controls">a Radio Globo</cite></strong>
               </small>
             </footer>
           </blockquote>
         </div>
         <div class="card text-center">
           <div class="card-body">
-            <h5 class="card-title">Título do card</h5>
-            <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+            <h5 class="card-title">Diego Souza faz gol em Cassio 8 anos atrasado</h5>
+            <p class="card-text">Diego Souza supera Cássio e marca o gol da vitória do Botafogo.</p>
             <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
           </div>
         </div>
@@ -156,6 +194,22 @@
          </div>
         </div>
       </div>
+      
+
+      <div id = "footerPrincipal" class="card text-center">
+          <div class="card-header">
+            Destaque
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><strong>FutFake.com</strong></h5>
+            <p class="card-text"><em>Site criado para estudo, feito apenas com HTML, CSS, BootStrap.</em></p>
+            <a href="https://github.com/JoaoLimaBRR" target="_blank" class="btn btn-primary">Visite meu GitHub</a>
+          </div>
+          <div id = "nomeOriginal" class="card-footer text-muted">
+                  <strong>®JoãoVitor®</strong>
+          </div>
+        </div>
+
 
 
      

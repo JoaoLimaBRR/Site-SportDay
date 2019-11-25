@@ -15,3 +15,20 @@ body
 {
         background-image: linear-gradient(green, white);
 }
+#form
+{
+    background-image: linear-gradient(rgb(51, 153, 255), white);
+    
+}
+#form2
+{
+    padding: 2%;
+}
+#footerPrincipal
+{
+    background-image: linear-gradient(green, white);
+}
+#footerSegundario
+{
+    background-image: linear-gradient(rgb(51, 153, 255), white);
+}
